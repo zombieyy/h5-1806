@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/list.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+			<div id="nav">
+			<div class="container">
+	    	<div class="nav1 fr">
+	    		<span class="Chead-welcome">欢迎来到乐蜂，请&nbsp;
+		    	<a href="html/denglu.html">登录</a>&nbsp; | &nbsp;<a href="#">免费注册</a>
+		    	<a class="turl Chead_myh" href="http://order.lefeng.com" id="Chead_myh">我的订单<i></i></a>
+		        <div class="Chead-myhome" style="display:none;">
+	            <a class="turl" href="#">我的订单<i></i></a> 
+	            <a href="#">我的钱包</a> 
+	            <a href="#">我的礼券</a>
+	        </div>
+				<span class="Chead-save" id="Chead-save">收藏乐蜂</span> <!-- 快速导航 --> <span class="fast-nav turl" id="Chead_fastnav">快速导航<i></i></span>
+	            <div class="Chead-floatmenu" style="display:none;">
+	                <div id="floatmenucon">
+	                    <a href="http://www.lefeng.com/help/helpCenter.html">帮助中心</a> <a href="http://www.lefeng.com/help/73.html">联系客服</a> <a href="http://www.lefeng.com/help/74.html">商务合作</a>
+	                    <h6>
+	                        <img src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/wx_icon_for_lf.jpg" height="112" width="112" /> <b>惊喜码上来</b>
+	                    </h6>
+	                </div>
+	                <span class="fast-nav turl" style="color:#666666;">快速导航<i></i></span>
+	            </div>
+	             <!-- 手机乐蜂 --> <a class="Chead-app" href="javascript:;">手机乐蜂</a>
+	            <div class="Chead-appDown" style="display:none;">
+	                <div>
+	                    <img src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/xz_icon_for_lf.jpg" height="112" width="112" />
+	                    <h6>
+	                        <b class="i1"></b><b class="i2"></b>客户端
+	                    </h6>
+	                    
+	                </div>
+	                <span class="fast-nav turl"><a class="Chead-app" href="javascript:;">手机乐蜂</a></span>
+	            </div>
+    	
+    	</div>
+        </div>
+		</div>
+        
+	<div id="sousuo">
+		<div class="container">
+			<div class="sousuo1 fl">
+				<img src="../images/3.PNG"/>
+			</div>
+			<div class="sousuo2 fl">
+				<form action="#" class="clearfix">
+                        <input type="text" class="txt fl" placeholder="韩束集团"/>
+                        <input type="button" class="btn fl" value="搜索" style="color: white;"/>
+                    </form>
+                    <p>热搜：<a href="#">口红</a><a href="#">洁面耐克</a><a href="#">韩束集团</a></p>
+				
+			</div>
+			<div class="Chead-shopping-wrap">
+            <div class="Chead-shopping" id="Chead-shopping">
+                <div class="shopping-btn">
+                    <strong>0</strong>
+                </div>
+                <div class="shopping-list" style="display: none;">
+                    <div class="shopping-list-title">
+                        <strong>0</strong>
+                    </div>
+                    <div class="shopping-list-pro noshop" style="height: 30px;">您的购物车还没有商品，<br>赶紧去选购吧！</div>
+                    <div class="shopping-list-pro haveshop" style="display:none;">
+                        <i></i>
+                        <div class="shopping-list-bar" id="shopping_list_info">
+                        </div>
+                        <p>
+                            共<b id="totalProduct" class="countnum">0</b>件商品
+                        </p>
+                        <p>
+                            <span>共计：<b id="totalMoney" class="countprice"></b></span>
+                        </p>
+                        <a class="goshopping" href="http://shopping.lefeng.com/showCart">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+	</div>
+	
+	<div id="daohang">
+		<div class="container">
+			<div class="daphang_l fl">
+				<h2 style="position: relative;"class="dian">商品列表</h2>
+				<ul class="lie"style="position: absolute;height: 600px;width: 220px;z-index:10;">
+					<li>
+						<div class="lie1"style="position: relative;">
+							<h6>护肤用品</h6>
+						<a href="#">面膜</a>
+						<a href="#"style="padding-left: 33px;">防晒隔离</a>
+						<a href="#">护肤套装</a>
+						<a href="#">洁面</a>
+						<a href="#"style="padding-left: 33px;">面部护肤</a>
+						<a href="#">眼部护理</a>
+						</div>
+						<div class="lie2"style="width: 692px;height: 186px;position: absolute;left:220px;top:0px;background-color:white;">
+								<ul class="fl"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="fr"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</li>
+					<li>
+						<div class="lie1">
+							<h6>护肤用品</h6>
+						<a href="#">面膜</a>
+						<a href="#"style="padding-left: 33px;">防晒隔离</a>
+						<a href="#">护肤套装</a>
+						<a href="#">洁面</a>
+						<a href="#"style="padding-left: 33px;">面部护肤</a>
+						<a href="#">眼部护理</a>
+						</div>
+						<div class="lie2"style="width: 692px; height: 186px;position: absolute;left:220px;top:120px;background-color:white;">
+							<ul class="fl"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="fr"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</li>
+					<li>
+						<div class="lie1">
+							<h6>护肤用品</h6>
+						<a href="#">面膜</a>
+						<a href="#"style="padding-left: 33px;">防晒隔离</a>
+						<a href="#">护肤套装</a>
+						<a href="#">洁面</a>
+						<a href="#"style="padding-left: 33px;">面部护肤</a>
+						<a href="#">眼部护理</a>
+						</div>
+						<div class="lie2"style="width: 692px;height: 186px;position: absolute;left:220px;top:240px;background-color:white;">
+							<ul class="fl"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="fr"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</li>
+					<li class="lie_l">
+				
+						<div class="lie1">
+							<h6>护肤用品</h6>
+						<a href="#">面膜</a>
+						<a href="#"style="padding-left: 33px;">防晒隔离</a>
+						<a href="#">护肤套装</a>
+						<a href="#">洁面</a>
+						<a href="#"style="padding-left: 33px;">面部护肤</a>
+						<a href="#">眼部护理</a>
+						</div>
+						<div class="lie2"style="width: 692px;height: 186px;position: absolute;left:220px;top:360px;background-color:white;">
+							<ul class="fl"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="fr"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+						</div>
+					<li class="lie_l">
+						<div class="lie1">
+							<h6>护肤用品</h6>
+						<a href="#">面膜</a>
+						<a href="#"style="padding-left: 33px;">防晒隔离</a>
+						<a href="#">护肤套装</a>
+						<a href="#">洁面</a>
+						<a href="#"style="padding-left: 33px;">面部护肤</a>
+						<a href="#">眼部护理</a>
+						</div>
+						<div class="lie2"style="width: 692px;height: 186px;position: absolute;left:220px;top:480px;background-color:white;">
+							<ul class="fl"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="fr"style="width: 340px;">
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px ;"><a href="">面膜</a></strong>
+										<div style="width: 340px;">
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											
+										</div>
+									</li>
+									<li>
+										<strong class="fl"style="width: 70px;height: 33px;"><a href="">面膜</a></strong>
+										<div>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+											<a href="#">面膜</a>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="daphang_c fl">
+				<a href="../intex.html">首页</a>
+				<a href="html/list.html">蜂购全球</a>	
+			</div>
+			<div class="daphang_r fr">
+				<a href="http://www.lefeng.com/notice/205.html"style="background-color: #F5F5F5;">
+					<img src="../images/4.png"/>
+				</a>	
+			</div>
+		</div>
+			
+	</div>
+	
+	<div id="daohangtu"style="background-color: #F5F5F5;">
+		<div class="container">
+			<img src="../images/list1.png"/>
+		</div>
+		</div>
+		 <div class="Y_sort"style="background-color: #F5F5F5;">
+		 	<div class="container">
+		 		<h3>
+                     <a href="#" id="Yprice">价格排序<i></i></a>
+                    <a href="#" id="Yshijian">按时间排序</a>
+                            
+                  </h3>
+                  <div id="Y-liebiao1">
+                      <li data-myid="">
+                          <img src="../images/main1.png" alt="" />
+                          <label for="check1"><input type="checkbox" id="check1" ></label>
+                          <del>USD  219</del> <span>USD 189 </span>
+                          <p>Save USD 30</p>  
+                      </li>
+                  </div>
+		 	</div>
+                  
+            </div>
+            <div class="Cfooter-info">
+		<dl class="w1000">
+			<dt>
+				<strong><img src="../images/d1.png"/></strong><em>客服 9:00-24:00</em> 
+			</dt>
+			<dd>
+				<strong>新手指南</strong> <a target="_blank" href="http://www.lefeng.com/help/55.html">购物流程</a> <a target="_blank" href="http://www.lefeng.com/help/62.html">优惠券规则</a> <a target="_blank" href="http://www.lefeng.com/help/73.html">联系客服</a> <a target="_blank" href="http://www.lefeng.com/help/56.html">常见问题</a> 
+			</dd>
+			<dd>
+				<strong>付款方式</strong> <a target="_blank" href="http://www.lefeng.com/help/58.html">在线支付</a> <a target="_blank" href="http://www.lefeng.com/help/60.html">货到付款</a> <a target="_blank" href="http://www.lefeng.com/help/61.html">钱包支付</a> 
+			</dd>
+			<dd>
+				<strong>配送服务</strong> <a target="_blank" href="http://www.lefeng.com/help/64.html">配送时效及运费</a> <a target="_blank" href="http://www.lefeng.com/help/65.html">验货与签收</a> 
+			</dd>
+			<dd>
+				<strong>售后服务</strong> <a target="_blank" href="http://www.lefeng.com/help/70.html">退货政策</a> <a target="_blank" href="http://www.lefeng.com/help/71.html">退货流程</a> <a target="_blank" href="http://www.lefeng.com/help/72.html">退款方式及时效</a> 
+			</dd>
+			<dd class="f-sao1">
+				<strong>乐蜂网微信</strong><b><img src="../images/d2.png"/></b> 
+			</dd>
+		</dl>
+	</div>
+	<div class="Cfooter-cr">
+		<a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/76.html">关于乐蜂</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/77.html">免责声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/78.html">隐私声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/79.html">版权声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/zhaopin.html">招聘信息</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/73.html">联系我们</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/helpCenter.html">帮助中心</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/80.html">友情链接</a> <br />
+		<span>Copyright <b>&copy;</b> 2008-2016 Lefeng.com All Rights Reserved.</span> <span>乐蜂（上海）信息技术有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<span>京公网安备11010502014183</span> <a rel="nofollow" target="_blank" href="http://images.lefeng.com/indexfiles/businesslicence_new.jpg?biid=7520">营业执照</a> 
+		<div class="Cfooter-cr-img">
+			<a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120918001688001713"></a> <a class="kxwz" rel="nofollow" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e15011931011457422bp2j000000&amp;ct=df&amp;a=1&amp;pa=0.1418370669707656"></a> <a class="pjzxlm" rel="nofollow" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1074823632"></a> <a class="itrust" rel="nofollow" target="_blank" href="http://www.315online.com.cn/member/315130044.html">中国互联网信用评价中心</a> <a href="http://www.lefeng.com/notice/84.html" target="_blank" rel="nofollow" class="xfwq"></a> 
+		</div>
+	</div>
+	
+	</body>
+</html>

@@ -1,0 +1,144 @@
+
+#Y_car .Ycar_top a{
+    display: inline-block;
+    height: 78px;
+    line-height: 78px;
+    color:#000;
+    padding-left: 77px;
+    position: relative;
+}
+#Y_car .Ycar_top a i{
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    background: url("../images/car_1.png") no-repeat;
+}
+#Y_car .Ycar_top span{
+    font-size: 20px;
+    font-weight: bold;
+    color:#000;
+}
+
+
+#Y_car .Ycar_item {
+    box-sizing: border-box;
+    /*height: 563px;*/
+    border-top: 3px solid #000;
+}
+#Y_car .Ycar_item  table{
+    width: 100%;
+}
+#Y_car .Ycar_item  table thead{
+    border:1px solid #ddd;
+}
+#Y_car .Ycar_item table  th:first-child{
+    width: 524px; text-align: left;
+}
+#Y_car .Ycar_item table  th{
+    padding:5px 10px;
+    height: 41px;
+    line-height: 41px;
+    text-align: left;
+}
+#Y_car .Ycar_item table  th:last-child{
+    cursor:pointer;
+}
+#Y_car .Ycar_item table tbody tr:first-child{
+    height: 41px;
+}
+#Y_car .Ycar_item table tbody tr{
+    height: 102px;
+    border: 1px solid #ccc;
+}
+#Y_car .Ycar_item table tbody tr td img{
+    width: 85px;
+    height: 65px;
+}
+#Y_car .Ycar_item table tbody tr td li{
+    display: inline-block;
+}
+#Y_car .Ycar_item table  tbodytr td li>span{
+    display: block;
+}
+#Y_car .Ycar_item table tbody tr td input {
+    width: 30px;
+    height: 19px;
+    border:1px solid #ccc;
+}
+#Y_car .Ycar_item table tbody tr td .Yjia,#Y_car .Ycar_item table tr td .Yjian{
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+    cursor: pointer;
+    background: #ccc;
+    padding:0 ;
+    margin:0;
+    vertical-align:middle;
+}
+#Y_car .Ycar_item table tbody tr td b{
+    display: block;
+}
+.btn-close{ 
+    padding:0 5px;cursor:default;
+    width: 80px;
+    line-height: 20px;
+    text-align: center;
+    height: 20px;
+}
+.btn-close:hover{background-color:#f00;color:#fff;}
+#Y_car .Ycar_item table tfoot{border: 1px solid #ccc;}
+#Y_car .Ycar_item table tfoot tr{
+    height: 120px;  
+}
+#Y_car .Ycar_item table tfoot tr a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*===================头部购物车================*/
+#shopping_car{
+    width: 100%;
+}
+#shopping_car #hot_items{
+    width:980px;
+    margin: 0 auto;
+}
+#shopping_car #hot_items h4{
+    line-height: 50px;
+    color:#33336E;
+}
+#shopping_car #hot_items .commodity{
+
+}
+#shopping_car #hot_items .commodity ul{
+
+}
+#shopping_car #hot_items .commodity ul li{
+    float: left;
+    margin: 2px 20px 30px 20px;
+    width: 132px;
+}
+#shopping_car #hot_items .commodity ul li img{
+    width: 111px;
+}
+#shopping_car #hot_items .commodity ul li p:nth-child(3){
+    color:red;
+}
+#shopping_car #hot_items .commodity ul li div:nth-child(4){
+    
+}
+#shopping_car #hot_items .commodity ul li button{
+    background: #D2691E;
+    color:#fff;
+    width: 72px;
+    text-align: :left;
+    border-radius: 50px 0 0 50px;
+}
+#mdfk a{
+    display: inline-block;
+}
+.jr{display: inline-block; width: 40px;background-color: red;}

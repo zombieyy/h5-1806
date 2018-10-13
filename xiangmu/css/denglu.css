@@ -1,0 +1,5 @@
+#dl1{width: 100%;background-color: #FBE1D3;}
+#dl1 .dl_q{width: 423px;height: 621px;background-color: white;}
+.popover{position:absolute;z-index:10;width:500px;border:2px solid #ddd;padding:5px;background-color:#fff;}
+#btnLogin{display: inline-block;width: 300px;height: 40px;color: white;background-color: red;}
+#btnLogin>a{display: inline-block;width: 300px;height: 40px;color: white;background-color: red;text-align: center;line-height: 40px;}

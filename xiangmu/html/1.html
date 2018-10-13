@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				 var uname = document.querySelector(".uname");
+            var output = document.querySelector(".output");
+            // 1.失去焦点时，获取uname的内容，创建ajax请求，传递到php。
+            uname.onblur=function(){
+            	var _uname=uname.value;
+            var xhr=new XMLHttpRequest();
+            var status=[200,304];
+            xhr.onload=function(){
+            	if(status.indexOf(xhr.status)>=0){
+            		var res=xhr.responseText;
+            		if(res == "true"){
+                            output.innerHTML = "用户名已存在";
+                        }else if(res == "false"){
+                            output.innerHTML = "可以使用";
+                        }
+            		
+            	}
+            	
+            }
+            
+            xhr.open("get","../api/test7_username.php?uname="+_uname,true);
+            xhr.send(null);
+            }
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="w" class="fl ">
+				<form action="#">
+        用户名:<input type="text" class="uname" /><span class="output"></span><br />
+        密码：<input type="password" /><br />
+        <input type="submit" />,'
+    </form>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/denglu.css"/>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				 var uname = document.querySelector(".uname");
+            var output = document.querySelector(".output");
+            // 1.失去焦点时，获取uname的内容，创建ajax请求，传递到php。
+            uname.onblur=function(){
+            	var _uname=uname.value;
+            var xhr=new XMLHttpRequest();
+            var status=[200,304];
+            xhr.onload=function(){
+            	if(status.indexOf(xhr.status)>=0){
+            		var res=xhr.responseText;
+            		if(res == "true"){
+                            output.innerHTML = "用户名已存在";
+                        }else if(res == "false"){
+                            output.innerHTML = "可以使用";
+                        }
+            		
+            	}
+            	
+            }
+            
+            xhr.open("get","../api/zhuce.php"+_uname,true);
+            xhr.send(null);
+            }
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="dl">
+			<div id="nav">
+			<div class="container">
+	    	<div class="nav1 fr">
+	    		<span class="Chead-welcome">欢迎来到乐蜂，请&nbsp;
+		    	<a href="html/denglu.html">登录</a>&nbsp; | &nbsp;<a href="#">免费注册</a>
+		    	<a class="turl Chead_myh" href="http://order.lefeng.com" id="Chead_myh">我的订单<i></i></a>
+		        <div class="Chead-myhome" style="display:none;">
+	            <a class="turl" href="#">我的订单<i></i></a> 
+	            <a href="#">我的钱包</a> 
+	            <a href="#">我的礼券</a>
+	        </div>
+	        </div>
+	    </div>
+	    </div>
+	    <div id="dl1">
+			<div class="container">
+				<div class="dl_t">
+				<img src="../images/dl1.png"/>
+				</div>
+				<div class="dl_b">
+					<img src="../images/dl2.png"/>
+					<div class="dl_q fr">
+						<div>
+							<strong style="line-height: 69px;font-size: 23px;padding-left: 64px;">免费注册</strong>
+							<a href="#"class="fr"style="line-height:80px ;padding-right: 69px;">已有账号，请登录</a>
+						</div>
+						<div class="content"style="padding-left: 58px; ">
+			
+									<form action="#">
+								        <label style="font-size: 20px;line-height: 60px;">用户名:</label><input type="text" class="uname"  style="height: 30px;width: 200px; font-size: 20px; border: 1px solid #ccc;"/><span class="output"></span><br />
+								      <label style="font-size: 20px;line-height: 60px;">	  密码：</label><br/></br?><input type="password" style="height: 30px;width: 200px; font-size: 20px; border: 1px solid #ccc;"/><br />
+								      <label style="font-size: 20px;line-height: 60px;">	重新输入 密码：</label><br/></br?><input type="password" style="height: 30px;width: 200px; font-size: 20px; border: 1px solid #ccc;"/><br />
+								       
+								       <div class="form-indent" style="padding-top: 40px;">
+							<button id="btnLogin" disabled><a href="denglu.html#username">同意协议并注册</a></button>
+							</div>
+		
+							   </div>
+
+					</div>
+				</div>
+				<div class="qita">
+					
+				</div>
+			</div>
+		</div>
+			</div>
+	    <div class="Cfooter-info">
+			<dl class="w1000">
+				<dt>
+					<strong><img src="../images/d1.png"/></strong><em>客服 9:00-24:00</em> 
+				</dt>
+				<dd>
+					<strong>新手指南</strong> <a target="_blank" href="http://www.lefeng.com/help/55.html">购物流程</a> <a target="_blank" href="http://www.lefeng.com/help/62.html">优惠券规则</a> <a target="_blank" href="http://www.lefeng.com/help/73.html">联系客服</a> <a target="_blank" href="http://www.lefeng.com/help/56.html">常见问题</a> 
+				</dd>
+				<dd>
+					<strong>付款方式</strong> <a target="_blank" href="http://www.lefeng.com/help/58.html">在线支付</a> <a target="_blank" href="http://www.lefeng.com/help/60.html">货到付款</a> <a target="_blank" href="http://www.lefeng.com/help/61.html">钱包支付</a> 
+				</dd>
+				<dd>
+					<strong>配送服务</strong> <a target="_blank" href="http://www.lefeng.com/help/64.html">配送时效及运费</a> <a target="_blank" href="http://www.lefeng.com/help/65.html">验货与签收</a> 
+				</dd>
+				<dd>
+					<strong>售后服务</strong> <a target="_blank" href="http://www.lefeng.com/help/70.html">退货政策</a> <a target="_blank" href="http://www.lefeng.com/help/71.html">退货流程</a> <a target="_blank" href="http://www.lefeng.com/help/72.html">退款方式及时效</a> 
+				</dd>
+				<dd class="f-sao1">
+					<strong>乐蜂网微信</strong><b><img src="../images/d2.png"/></b> 
+				</dd>
+			</dl>
+		</div>
+		
+		<div class="Cfooter-cr">
+		<a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/76.html">关于乐蜂</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/77.html">免责声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/78.html">隐私声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/79.html">版权声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/zhaopin.html">招聘信息</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/73.html">联系我们</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/helpCenter.html">帮助中心</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/80.html">友情链接</a> <br />
+		<span>Copyright <b>&copy;</b> 2008-2016 Lefeng.com All Rights Reserved.</span> <span>乐蜂（上海）信息技术有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<span>京公网安备11010502014183</span> <a rel="nofollow" target="_blank" href="http://images.lefeng.com/indexfiles/businesslicence_new.jpg?biid=7520">营业执照</a> 
+		<div class="Cfooter-cr-img">
+			<a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120918001688001713"></a> <a class="kxwz" rel="nofollow" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e15011931011457422bp2j000000&amp;ct=df&amp;a=1&amp;pa=0.1418370669707656"></a> <a class="pjzxlm" rel="nofollow" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1074823632"></a> <a class="itrust" rel="nofollow" target="_blank" href="http://www.315online.com.cn/member/315130044.html">中国互联网信用评价中心</a> <a href="http://www.lefeng.com/notice/84.html" target="_blank" rel="nofollow" class="xfwq"></a> 
+		</div>
+		</div>
+		
+    </form>
+	</body>
+</html>
